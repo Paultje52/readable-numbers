@@ -24,6 +24,5 @@ function readables(number, decPlaces = 1) {
   return decimals + formats[result];
 }
 
-
 module.exports = exports = readables;
 exports.formats = formats;
