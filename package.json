@@ -1,6 +1,6 @@
 {
   "name": "readable-numbers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make your big numbers readable!",
   "main": "src/index.js",
   "scripts": {

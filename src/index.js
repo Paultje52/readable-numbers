@@ -8,7 +8,7 @@ for (let a of alphabet) {
 
 let formats = ["", "K", "M", "B", "T", ...result];
 function readables(number, decPlaces = 1) {  
-  let splitted = BigInt(number).toString().split("");
+  let splitted = BigInt(Math.floor(number)).toString().split("");
   if (splitted.length <= 3) return number.toString();
   let result = Math.floor((splitted.length-1)/3);
   
