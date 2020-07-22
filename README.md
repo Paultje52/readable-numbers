@@ -9,10 +9,11 @@ Readable-numbers makes your big numbers readable!
 ## Main function
 ### Parameters
 parameters.
-| Name     | Required | Default | Value type | Description                               |
-|----------|----------|---------|------------|-------------------------------------------|
-| Number   | Yes      | X       | Number     | The number that you want to make readable |
-| Decimals | No       | 1       | Number     | How many decibels you want                |
+| Name             | Required | Default | Value Type | Description                                                                                   |
+|------------------|----------|---------|------------|-----------------------------------------------------------------------------------------------|
+| Number           | Yes      | X       | Number     | The number that you want to make readable                                                     |
+| Decimals         | No       | 1       | Number     | How many decimals you want                                                                    |
+| Format Thousands | No       | true    | Boolean    | If set to false 1000 and up to 1 million will not be formatted and displayed like this: 1,000 |
 ### Example
 ```js
 const readable = require("readable-numbers");
