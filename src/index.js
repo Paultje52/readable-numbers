@@ -25,7 +25,5 @@ function readables(number, decPlaces = 1, formatThousand = true) {
   return decimals + formats[result];
 }
 
-console.log(readables(937456, 1))
-
 module.exports = exports = readables;
 exports.formats = formats;
