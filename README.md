@@ -19,6 +19,8 @@ parameters.
 const readable = require("readable-numbers");
 console.log(readable(16734239434)); // 16.7B
 console.log(readable(21485345, 2)); // 21.48M
+console.log(readable(4625, 1, true)); // (default) 4,6K
+console.log(readable(4625, 1, false)); // 4,625
 ```
 ## Formats
 An array with all the formats
