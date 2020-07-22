@@ -1,12 +1,20 @@
 {
   "name": "readable-numbers",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Make your big numbers readable!",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paultje52/readable-numbers.git"
+  },
   "keywords": [],
   "author": "Paultje52 & ChickenDevv",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paultje52/readable-numbers/issues"
+  },
+  "homepage": "https://github.com/Paultje52/readable-numbers#readme"
 }
