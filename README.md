@@ -42,6 +42,14 @@ console.log(readable.formats);
 // ]
 ```
 
+### **Setting formats**
+You can change the formats by using `readable.setFormats(formats)`.
+```js
+const readable = require("readable-numbers");
+readable.setFormats(["", "A", "B", "C"]);
+console.log(readable(1000000)); // 1B
+```
+
 # Counting
 These are the formats that we use. 
 
