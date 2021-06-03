@@ -10,6 +10,8 @@ let formats = ["", "K", "M", "B", "T", ...result];
 function readables(number, decPlaces = 1, formatThousand = true) {  
   if (!formatThousand && number <= 999999) return number.toLocaleString("en");
   
+  if (number.toString().includes("e")) number = BigInt(number);
+  
   let splitted = number.toString().split("");
   if (splitted.length <= 3) return number.toString();
   let result = Math.floor((splitted.length-1)/3);
@@ -25,5 +27,6 @@ function readables(number, decPlaces = 1, formatThousand = true) {
   if (!formats[result]) formats[result] = "Ω";
   return decimals + formats[result];
 }
+
 module.exports = exports = readables;
 exports.formats = formats;
