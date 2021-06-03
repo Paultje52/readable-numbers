@@ -4,7 +4,7 @@
   "description": "Make your big numbers readable!",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Paultje52/readable-numbers/issues"
   },
-  "homepage": "https://github.com/Paultje52/readable-numbers#readme"
+  "homepage": "https://github.com/Paultje52/readable-numbers#readme",
+  "devDependencies": {
+    "jest": "^27.0.4"
+  }
 }
