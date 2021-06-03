@@ -30,3 +30,4 @@ function readables(number, decPlaces = 1, formatThousand = true) {
 
 module.exports = exports = readables;
 exports.formats = formats;
+exports.setFormats = (f) => { formats  = f };
