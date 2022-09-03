@@ -1,8 +1,9 @@
 {
   "name": "readable-numbers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Make your big numbers readable!",
   "main": "src/index.js",
+  "types": "types.d.ts",
   "scripts": {
     "test": "jest"
   },
