@@ -7,6 +7,21 @@ for (let a of alphabet) {
 }
 
 let formats = ["", "K", "M", "B", "T", ...result];
+
+/**
+ * Formats a big number into a human-readable format!
+ * @param {number} number The number you want to format
+ * @param {number} decPlaces How many decimals you want
+ * @param {boolean} formatThousand If numbers in the thousand range should get a K suffix
+ * @returns {string} The formatted number
+ * 
+ * @example
+ * const readable = require("readable-numbers");
+ * console.log(readable(16734239434)); // 16.7B
+ * console.log(readable(21485345, 2)); // 21.48M
+ * console.log(readable(4625, 1, true)); // (default) 4,6K
+ * console.log(readable(4625, 1, false)); // 4,625
+ */
 function readables(number, decPlaces = 1, formatThousand = true) {  
   if (!formatThousand && number <= 999999) return number.toLocaleString("en");
   
