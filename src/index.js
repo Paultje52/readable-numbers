@@ -1,5 +1,5 @@
-let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-let result = [];
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+const result = [];
 for (let a of alphabet) {
   for (let b of alphabet) {
     result.push(a+b);
@@ -27,9 +27,9 @@ function readables(number, decPlaces = 1, formatThousand = true) {
   
   if (number.toString().includes("e")) number = BigInt(number);
   
-  let splitted = number.toString().split("");
+  const splitted = number.toString().split("");
   if (splitted.length <= 3) return number.toString();
-  let result = Math.floor((splitted.length-1)/3);
+  const result = Math.floor((splitted.length-1)/3);
   
   let decimals = splitted.slice(0, -result*3+decPlaces);
   decimals.splice(splitted.slice(0, -result*3).length, 0, ".");
