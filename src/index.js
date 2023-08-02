@@ -24,10 +24,9 @@ let formats = ["", "K", "M", "B", "T", ...result];
  */
 function readables(number, decPlaces = 1, formatThousand = true) {  
   if (!formatThousand && number <= 999999) return number.toLocaleString("en");
-  
   if (number.toString().includes("e")) number = BigInt(number);
   
-  const splitted = number.toString().split("");
+  const splitted = number.toString().split(".")[0].split("");
   if (splitted.length <= 3) return number.toString();
   const result = Math.floor((splitted.length-1)/3);
   
