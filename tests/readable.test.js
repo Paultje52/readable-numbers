@@ -8,6 +8,7 @@ test("Test if the format works as expected", () => {
   expect(readable(1000)).toBe("1K");
   expect(readable(1111)).toBe("1.1K");
   expect(readable(1000000000)).toBe("1B");
+  expect(readable(3.141592)).toBe("3.141592");
 });
 
 test("Test if the parameters work as expected", () => {
